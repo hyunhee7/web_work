@@ -32,10 +32,32 @@ public class MemberDao {
 	}
 	//회원정보 저장
 	public boolean insert(MemberDto dto){
-		return false;
-	}
+		Connection conn=null;
+		PreparedStatement pstmt = null;
+		int flag=0;
+		try{
+			conn=new DBConnect().getConn();
+			//실행할 sql문 준비하기
+			String sql="INSERT INTO member (num, name, addr) VALUES(member_seq.NEXTVAL, ?, ?)";
+			pstmt=conn.prepareStatement(sql);
+			// ? 에 값 바인딩 하기
+			pstmt.setString(1, dto.getName());
+			pstmt.setString(2, dto.getAddr());
+			//sql 문 수행하기
+			flag=pstmt.executeUpdate();
+		}catch (Exception e){
+			
+		}
+		if(flag>0){
+			return true;
+		}else{
+			return false;
+		}
+	}// insert()
+	
 	//회원정보 수정
 	public boolean update(MemberDto dto){
+		
 		return false;
 	}
 	//회원정보 삭제

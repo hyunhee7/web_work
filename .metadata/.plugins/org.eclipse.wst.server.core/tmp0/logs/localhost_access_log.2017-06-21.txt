@@ -66,3 +66,15 @@
 0:0:0:0:0:0:0:1 - - [21/Jun/2017:15:55:18 +0900] "GET /Step04_DataBase/WEB-INF/index.html HTTP/1.1" 404 992
 127.0.0.1 - - [21/Jun/2017:15:56:19 +0900] "GET / HTTP/1.1" 404 994
 0:0:0:0:0:0:0:1 - - [21/Jun/2017:15:56:19 +0900] "GET /Step04_DataBase/WEB-INF/index.html HTTP/1.1" 404 992
+127.0.0.1 - - [21/Jun/2017:15:59:45 +0900] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [21/Jun/2017:15:59:45 +0900] "GET /Step05_JavaServerPage/index.html HTTP/1.1" 200 234
+0:0:0:0:0:0:0:1 - - [21/Jun/2017:16:05:58 +0900] "GET /Step05_JavaServerPage/index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [21/Jun/2017:16:06:00 +0900] "GET /Step05_JavaServerPage/showtime.jsp HTTP/1.1" 200 298
+0:0:0:0:0:0:0:1 - - [21/Jun/2017:16:13:20 +0900] "GET /Step05_JavaServerPage/index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [21/Jun/2017:16:13:21 +0900] "GET /Step05_JavaServerPage/showtime.jsp HTTP/1.1" 200 355
+0:0:0:0:0:0:0:1 - - [21/Jun/2017:16:46:03 +0900] "GET /Step05_JavaServerPage/index.html HTTP/1.1" 200 290
+0:0:0:0:0:0:0:1 - - [21/Jun/2017:16:46:04 +0900] "GET /Step05_JavaServerPage/list.jsp HTTP/1.1" 404 1054
+0:0:0:0:0:0:0:1 - - [21/Jun/2017:16:46:30 +0900] "GET /Step05_JavaServerPage/index.html HTTP/1.1" 200 297
+0:0:0:0:0:0:0:1 - - [21/Jun/2017:16:46:36 +0900] "GET /Step05_JavaServerPage/member/list.jsp HTTP/1.1" 200 305
+0:0:0:0:0:0:0:1 - - [21/Jun/2017:16:57:29 +0900] "GET /Step05_JavaServerPage/index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [21/Jun/2017:16:57:31 +0900] "GET /Step05_JavaServerPage/member/list.jsp HTTP/1.1" 200 740

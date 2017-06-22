@@ -15,8 +15,7 @@ public class TestServlet  extends HttpServlet{//1.
 	//2.
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//요청을한 클라이언트의 정보 갖고 있는 request
-		//servlet의 주된 목적: 응답 --> 응답할 도구는 response로 부터 얻어오면 된다.
+
 		//요청 메소드를 읽어온다.
 		String method = request.getMethod();
 		//콘솔에 출력
