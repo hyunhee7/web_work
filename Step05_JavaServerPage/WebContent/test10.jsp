@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="resource/css/bootstrap.css" />
 </head>
 <body>
+
 <%
 
 	int pageNum=1;
@@ -19,16 +20,29 @@
 	}
 	//콘솔에 pageNum 출력해보기
 	System.out.println(pageNum);
-
+	
 %>
 	<div class="container">
 		<h3><strong><%=pageNum %></strong>페이지 입니다.</h3>
 		<ul class="pagination">
 			<%for(int i=1;i<6;i++){ %>
-			<li <% if (num.equals(i)){%>class="active"<%} %>>
+			<li <% if (i==pageNum){%>class="active"<%} %>>
 				<a href="test10.jsp?pageNum=<%=i%>" ><%=i %></a>
 			</li>
 			<%} %>
+			<br/>
+			<%for(int i=1;i<6;i++){ %>
+				<% if (pageNum==i) {%>
+					<li class="active">
+						<a href="test10.jsp?pageNum=<%=i%>" ><%=i %></a>
+					</li>
+				<%} else {%>
+					<li>
+						<a href="test10.jsp?pageNum=<%=i%>" ><%=i %></a>
+					</li>
+				<%} %>
+			<%} %>			
+			
 		</ul>
 	</div>
 </body>
