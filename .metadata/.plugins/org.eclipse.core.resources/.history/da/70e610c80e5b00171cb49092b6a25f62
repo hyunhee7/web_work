@@ -1,0 +1,12 @@
+package test.board.dto;
+
+public class BoardDto {
+	private int num; 
+	private String title;
+	private String author;
+	
+	public BoardDto(){
+		
+	}
+	
+}

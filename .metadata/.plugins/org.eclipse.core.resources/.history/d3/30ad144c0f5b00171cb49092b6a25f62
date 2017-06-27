@@ -1,0 +1,6 @@
+package test.board.dao;
+
+public class BoardDao {
+	private BoardDao(){}
+	
+}

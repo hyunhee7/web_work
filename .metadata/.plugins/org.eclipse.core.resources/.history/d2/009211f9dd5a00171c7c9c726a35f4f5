@@ -1,0 +1,37 @@
+package test.board.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import test.board.dto.BoardDto;
+import test.util.DbcpBean;
+
+public class BoardDao {
+	//자신의 객체를 저장할 수 있는 static 멤버필드
+	private static BoardDao dao;
+	//외부에서 객체 생성할 수 없도록
+	private BoardDao(){}
+	//참조값을 리턴해주는 static 멤버 메소드
+	public static BoardDao getInstance(){
+		if(dao==null){
+			dao=new BoardDao();
+		}
+		return dao;
+	}
+	//새 글을 DB 에 저장하는 메서드
+	public boolean insert(BoardDto dto){
+		Connection conn=null;
+		PreparedStatement pstmt=null;
+		int flag=0;
+		try{
+			//Connection 객체의 참조값 열어오기
+			conn=new DbcpBean().getConn();
+			String sql="INSERT INTO board_guest(num,writer,title,content,regdate) VALUES(board_guest_seq.NEXTVAL, ?, ?, ?, SYSDATE)";
+			pstmt=conn.prepareStatement(sql);
+			//? 에 값 바인딩하기
+			pstmt.setString(1, dto.getWriter());
+			pstmt.setString(2, dto.getTitle());
+			pstmt.setString(3, dto.getContent());
+		}
+	}
+}
