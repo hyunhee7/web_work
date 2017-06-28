@@ -64,7 +64,7 @@ public class BoardDao {
 		List<BoardDto> list=new ArrayList<BoardDto>();
 		try{
 			conn=new DbcpBean().getConn();
-			String sql="SELECT num,writer,title,regdate"
+			String sql="SELECT num,writer,title,TO_CHAR(regdate,'YYYY.MM.DD AM HH:MI') regdate"
 					+ " FROM board_guest"
 					+ " ORDER BY num DESC";
 			pstmt=conn.prepareStatement(sql);

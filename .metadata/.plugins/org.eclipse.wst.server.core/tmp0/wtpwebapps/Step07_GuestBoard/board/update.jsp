@@ -3,8 +3,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
-	//1. 파라미터로 전달되는 수정할 글정보를 읽어온다.
-	request.setCharacterEncoding("utf-8");
+
 	int num=Integer.parseInt(request.getParameter("num"));
 	String writer=request.getParameter("writer");
 	String title=request.getParameter("title");
