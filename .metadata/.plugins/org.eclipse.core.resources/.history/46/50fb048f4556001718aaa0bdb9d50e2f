@@ -1,5 +1,0 @@
-package test.dto;
-// Data Transfer Object
-public class MemberDto {
-
-}
