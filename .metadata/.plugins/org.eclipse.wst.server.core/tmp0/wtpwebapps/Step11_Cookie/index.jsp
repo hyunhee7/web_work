@@ -10,6 +10,9 @@
 <h3>인덱스 페이지 입니다.</h3>
 <ul>
 	<li><a href="test.jsp">쿠키 테스트</a></li>
+	<li><a href="users/loginform.jsp">로그인 테스트</a></li>
+	<li><a href="popup/popup_test.html">팝업 테스트</a></li>
+	<li><a href="popup2/main.jsp">팝업 테스트2</a></li>
 </ul>
 </body>
 </html>
