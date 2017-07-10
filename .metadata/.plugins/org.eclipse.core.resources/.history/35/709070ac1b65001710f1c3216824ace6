@@ -1,0 +1,10 @@
+create table board_data(
+num 			number 			primary key,
+writer 			varchar2(100) 	not null,
+title 			varchar2(100) 	not null,
+orgFileName 	varchar2(100) 	not null,
+saveFileName 	varchar2(100) 	not null,
+filesize 		Number 			not null,
+regdate 						date);
+
+create sequence board_data_seq;

@@ -1,0 +1,20 @@
+package test.board.dao;
+
+import test.board.dto.ImageDto;
+
+public class ImageDao {
+	private static ImageDao dao;
+	private ImageDao(){}
+	public static ImageDao getInstance(){
+		if(dao==null){
+			dao=new ImageDao();
+		}
+		return dao;
+	}
+	public boolean insert(ImageDto dto){
+		return false;
+	}
+	public boolean delete(int num){
+		return false;
+	}
+}

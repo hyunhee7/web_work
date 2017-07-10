@@ -1,0 +1,12 @@
+package test.board.dao;
+
+public class ImageDao {
+	private static ImageDao dao;
+	private ImageDao(){}
+	public static ImageDao getInstance(){
+		if(dao==null){
+			dao=new ImageDao();
+		}
+		return dao;
+	}
+}
