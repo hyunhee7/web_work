@@ -15,7 +15,7 @@
 	 3. <input type="file" />
  -->
 <h3>파일 업로드 폼입니다.</h3>
-<form action="upload2.jsp" method="post" 
+<form action="upload.jsp" method="post" 
 	enctype="multipart/form-data">
 	<table>
 		<tr>

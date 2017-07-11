@@ -1,0 +1,6 @@
+package test.controller;
+
+public class BoardActionFactory {
+	private static BoardActionFactory factory;
+	private BoardActionFactory(){}
+}

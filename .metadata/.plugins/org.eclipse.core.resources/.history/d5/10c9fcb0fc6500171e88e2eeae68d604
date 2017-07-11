@@ -1,0 +1,20 @@
+package test.member.dao;
+
+import test.member.dto.MemberDto;
+
+public class MemberDao {
+	private static MemberDao dao;
+	private MemberDao(){}
+	public static MemberDao getInstance(){
+		if(dao==null){
+			dao=new MemberDao();
+		}
+		return dao;
+	}
+	public boolean insert(MemberDto dto){
+		return false;
+	}
+	public boolean update(MemberDto dto){
+		return false;
+	}
+}

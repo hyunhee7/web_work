@@ -36,12 +36,6 @@
 	//FileDao객체를 이용해서 DB에 저장하고
 	boolean isSuccess=FileDao.getInstance().insert(dto);
 	//응답한다.
-	
-	
-	
-	//응답한다. 
-	
-	
 %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">

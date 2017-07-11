@@ -157,7 +157,9 @@ public class FileDao {
 			pstmt.setString(3, dto.getOrgFileName());
 			pstmt.setString(4, dto.getSaveFileName());
 			pstmt.setLong(5, dto.getFileSize());
+			
 			flag = pstmt.executeUpdate();
+			System.out.println(flag);
 		} catch (SQLException se) {
 			se.printStackTrace();
 		} finally {

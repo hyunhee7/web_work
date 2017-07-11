@@ -25,6 +25,6 @@
 	<textarea cols="30" rows="10"><%=dto.getContent() %></textarea>
 	<br />
 	<a href="list.jsp">목록보기</a>
-	<a href="updateform.jsp?num=<%=dto.getNum()%>">수정</a>
+	<a href="updateform.do?num=<%=dto.getNum()%>">수정</a>
 </body>
 </html>

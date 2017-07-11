@@ -29,13 +29,24 @@ public class MyController extends HttpServlet{
 			request.setAttribute("fortuneToday", fortuneToday);
 			//뷰페이지로 forward 이동 (응답을 jsp 페이지에 위임하기)
 			path="/views/fortune.jsp";
-		}else{
+		}else if(command.equals("info")){
 			//회원 정보를 얻어오는 비즈니스 로직 수행
 			MemberDto dto=new MemberDto(1,"김구라","노량진");
 			// "/views/info.jsp" 페이지로 forward 이동해서
 			// 회원정보를 응답해 보세요.
 			request.setAttribute("dto", dto);
 			path="/views/info.jsp";
+		}else if(command.equals("signin")){
+			//폼전송 파라미터로 전달되는 아이디를 읽어온다.
+			String id=request.getParameter("id");
+			//세션에 담는다.
+			request.getSession().setAttribute("id", id); //session 얻어오려면 request.을이용해야함
+			path=request.getContextPath()+"/index.jsp"; 
+			isRedirect=true;
+		}else if(command.equals("signout")){
+			request.getSession().invalidate();
+			path=request.getContextPath()+"/index.jsp";
+			isRedirect=true;
 		}
 		
 		

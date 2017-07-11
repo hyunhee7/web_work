@@ -9,7 +9,6 @@ public class BoardDto {
 	
 	//디폴트 생성자
 	public BoardDto(){
-		
 	}
 
 	public BoardDto(int num, String writer, String title, String content, String regdate) {

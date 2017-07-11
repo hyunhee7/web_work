@@ -6,3 +6,5 @@ content CLOB,
 regdate DATE);
 
 CREATE SEQUENCE board_guest_seq;
+
+select 

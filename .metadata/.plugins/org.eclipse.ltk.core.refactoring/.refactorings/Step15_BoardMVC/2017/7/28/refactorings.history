@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;insertform.jsp&apos; to &apos;board&apos;" description="Move &apos;insertform.jsp&apos; to &apos;board&apos;" destination="WebContent/board" element1="WebContent/insertform.jsp" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1499766810841" updateReferences="true"/>
+</session>

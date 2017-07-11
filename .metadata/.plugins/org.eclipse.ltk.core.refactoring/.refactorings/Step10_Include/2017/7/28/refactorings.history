@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 elements to &apos;resource&apos;&#x0D;&#x0A;- Original project: &apos;Step10_Include&apos;&#x0D;&#x0A;- Destination element: &apos;resource&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     js&#x0D;&#x0A;     css&#x0D;&#x0A;     fonts&#x0D;&#x0A;     images" description="Copy folders" element1="WebContent/resource/js" element2="WebContent/resource/css" element3="WebContent/resource/fonts" element4="WebContent/resource/images" files="0" flags="589830" folders="4" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1499756668477" target="/Step15_MemberMVC/WebContent/resource" units="0" version="1.0"/>
+</session>
