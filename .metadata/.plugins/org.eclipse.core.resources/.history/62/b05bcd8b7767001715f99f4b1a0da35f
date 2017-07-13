@@ -1,0 +1,7 @@
+package test.member.dao;
+
+public class MemberDao {
+	private static MemberDao dao;
+	//MyBatis 를 사용하기 위한 핵심 객체
+	private static SqlSessionFactory factory;
+}

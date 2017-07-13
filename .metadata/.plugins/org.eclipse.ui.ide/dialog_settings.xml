@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\ncs03\web_work\Step18_MyBatis2"/>
+		<item value="C:\Users\user\Desktop\Step18_MyBatis2"/>
 		<item value="C:\ncs03\web_work\Sulbinjung"/>
 		<item value="C:\ncs03\web_work\Step06_PageMove"/>
 	</list>
 	<section name="WORKBENCH_SETTINGS">
 		<list key="ENABLED_TRANSFERS">
 		</list>
+	</section>
+	<section name="NewWizardAction">
 	</section>
 	<section name="ChooseWorkspaceDialogSettings">
 		<item value="500" key="DIALOG_X_ORIGIN"/>

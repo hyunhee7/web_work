@@ -1,0 +1,11 @@
+package test.member.dao;
+
+import org.apache.ibatis.session.SqlSessionFactory;
+
+public class MemberDao {
+	private static MemberDao dao;
+	//MyBatis 를 사용하기 위한 핵심 객체
+	private static SqlSessionFactory factory;
+	//생성자
+	private MemberDao(){	}
+}
