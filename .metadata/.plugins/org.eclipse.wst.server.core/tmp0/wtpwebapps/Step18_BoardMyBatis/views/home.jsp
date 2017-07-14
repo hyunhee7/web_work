@@ -9,6 +9,24 @@
 </head>
 <body>
 <h3>미니홈피</h3>
-<a href="${pageContext.request.contextPath }/board/list.do">방명록 리스트 보기</a>
+
+	<% String id=(String)session.getAttribute("id");%>
+	
+	<c:choose>
+		<c:when test="${ not empty id }">
+			<p><strong>${id }</strong>님 로그인중..</p>
+			<a href="${pageContext.request.contextPath }/board/list.do">방명록 리스트 보기</a>
+			<a href="${pageContext.request.contextPath }/users/logout.do">로그아웃</a>		
+		</c:when>
+		<c:otherwise>
+			<form action="${pageContext.request.contextPath }/users/signin.do" method="post">
+				아이디 <input type="text" name="id" id="id"/><br />
+				비밀번호<input type="text" name="pwd" id="pwd"/><br />
+				<button type="submit">로그인</button>
+			</form>
+			<a href="${pageContext.request.contextPath }/users/signupform.do">회원가입</a>
+		</c:otherwise>
+	</c:choose>
+
 </body>
 </html>

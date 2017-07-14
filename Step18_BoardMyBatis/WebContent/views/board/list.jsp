@@ -9,6 +9,8 @@
 </head>
 <body>
 	<a href="insertform.do">새 글 쓰기</a>
+	<p><strong>${id }</strong> 님 환영합니다!</p>
+	<a href="${pageContext.request.contextPath }/users/logout.do">로그아웃</a>
 	<h3>방명록 글 목록입니다.</h3>
 	<table>
 		<thead>

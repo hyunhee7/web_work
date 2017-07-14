@@ -60,6 +60,7 @@ public class BoardDao {
 	public void update(BoardDto dto){
 		SqlSession session=factory.openSession();
 		session.update("board.update",dto);
+		session.commit();
 		session.close();
 	}	
 }

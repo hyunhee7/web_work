@@ -9,3 +9,8 @@
 1499940315489	Move 'home.jsp' to 'views'
 1499940324142	Move 'list.jsp' to 'board'
 1499941436866	Delete element
+1499998942482	Delete element
+1499998987028	Rename package 'test.action'
+1499999805473	Rename type 'UserActionFactory'
+1500001136126	Rename type 'UsersSigninformAction'
+1500004866647	Delete element

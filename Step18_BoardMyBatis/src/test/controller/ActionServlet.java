@@ -28,9 +28,10 @@ public class ActionServlet extends HttpServlet{
 		
 		//해당 command 를 수행할 Action 객체를 팩토리로 부터 얻어온다. 
 		Action action=
-				UserActionFactory.getInstance().action(command);
+				BoardActionFactory.getInstance().action(command);
 		
 		if(action != null){//처리 가능한 command 라면 
+			System.out.println(action);
 			ActionForward af=null;
 			try{
 				af=action.execute(request, response);

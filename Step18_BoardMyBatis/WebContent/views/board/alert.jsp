@@ -8,7 +8,16 @@
 <title>views/board/alert.jsp</title>
 </head>
 <body>
+<% String id=(String)session.getAttribute("id");%>
 <p>${msg }</p>
-<a href="list.do">확인</a>
+	<c:choose>
+		<c:when test="${ not empty id }">
+			<a href="${pageContext.request.contextPath }/board/list.do">확인</a>
+		</c:when>
+		<c:otherwise>
+			<a href="${pageContext.request.contextPath }/home.do">로그인 창으로</a>
+		</c:otherwise>
+	</c:choose>
+
 </body>
 </html>
