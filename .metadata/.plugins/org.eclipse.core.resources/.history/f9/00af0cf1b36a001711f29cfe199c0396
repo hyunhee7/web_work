@@ -1,0 +1,22 @@
+package test.board.action;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.ibatis.session.SqlSession;
+
+import test.controller.Action;
+import test.controller.ActionForward;
+
+public class BoardUpdateAction extends Action{
+
+	@Override
+	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) {
+		int num=Integer.parseInt(request.getParameter("num"));
+		String writer=request.getParameter("writer");
+		String title=request.getParameter("title");
+		String content=request.getParameter("content");
+		return null;
+	}
+
+}

@@ -1,0 +1,19 @@
+package test.board.action;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import test.board.dao.BoardDao;
+import test.controller.Action;
+import test.controller.ActionForward;
+
+public class BoardDeleteAction extends Action{
+
+	@Override
+	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) {
+		int num=Integer.parseInt(request.getParameter("num"));
+		BoardDao.getInstance().delete(num);
+		return null;
+	}
+
+}

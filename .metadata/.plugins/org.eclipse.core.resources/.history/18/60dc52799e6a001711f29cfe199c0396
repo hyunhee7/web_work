@@ -1,0 +1,18 @@
+package test.board.action;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import test.controller.Action;
+import test.controller.ActionForward;
+
+public class BoardUpdateformAction extends Action{
+
+	@Override
+	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) {
+		//1. 글번호를 읽어온다.
+		int num = Integer.parseInt(request.getParameter("num"));
+		return null;
+	}
+
+}

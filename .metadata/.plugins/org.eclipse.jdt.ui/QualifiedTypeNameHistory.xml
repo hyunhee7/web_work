@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.sun.javafx.collections.MappingChange.Map"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="java.util.Map"/>
-<fullyQualifiedTypeName name="test.users.dto.UsersDto"/>
-<fullyQualifiedTypeName name="javax.servlet.Filter"/>
-<fullyQualifiedTypeName name="javax.servlet.annotation.WebFilter"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="test.util.DbcpBean"/>
@@ -17,7 +9,6 @@
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 <fullyQualifiedTypeName name="test.dto.MemberDto"/>
-<fullyQualifiedTypeName name="test.controller.ActionForward"/>
 <fullyQualifiedTypeName name="test.member.action.MemberDeleteAction"/>
 <fullyQualifiedTypeName name="test.member.action.MemberInsertformAction"/>
 <fullyQualifiedTypeName name="test.member.action.MemberInsertAction"/>
@@ -26,12 +17,6 @@
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
 <fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
-<fullyQualifiedTypeName name="test.board.action.BoardListAction"/>
-<fullyQualifiedTypeName name="test.board.action.BoardInsertformAction"/>
-<fullyQualifiedTypeName name="test.board.action.BoardInsertAction"/>
-<fullyQualifiedTypeName name="test.board.action.BoardDetailAction"/>
-<fullyQualifiedTypeName name="test.board.action.BoardUpdateAction"/>
-<fullyQualifiedTypeName name="test.board.action.BoardDeleteAction"/>
 <fullyQualifiedTypeName name="test.action.FortuneAction"/>
 <fullyQualifiedTypeName name="test.action.InfoAction"/>
 <fullyQualifiedTypeName name="java.io.Reader"/>
@@ -40,8 +25,6 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactory"/>
 <fullyQualifiedTypeName name="test.mybatis.SqlMapConfig"/>
-<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="test.action.MemberListAction"/>
 <fullyQualifiedTypeName name="test.action.MemberDeleteAction"/>
 <fullyQualifiedTypeName name="test.action.MemberInsertformAction"/>
@@ -50,14 +33,31 @@
 <fullyQualifiedTypeName name="test.member.dto.MemberDto"/>
 <fullyQualifiedTypeName name="test.member.dao.MemberDao"/>
 <fullyQualifiedTypeName name="test.action.MemberUpdateAction"/>
-<fullyQualifiedTypeName name="test.action.HomeAction"/>
 <fullyQualifiedTypeName name="test.action.BoardListAction"/>
 <fullyQualifiedTypeName name="test.action.BoardDeleteAction"/>
 <fullyQualifiedTypeName name="test.action.BoardInsertformAction"/>
 <fullyQualifiedTypeName name="test.action.BoardInsertAction"/>
 <fullyQualifiedTypeName name="test.action.BoardDetailAction"/>
-<fullyQualifiedTypeName name="test.controller.Action"/>
 <fullyQualifiedTypeName name="test.action.BoardUpdateAction"/>
+<fullyQualifiedTypeName name="test.users.action.UsersSignupformAction"/>
+<fullyQualifiedTypeName name="test.users.action.UsersSignupAction"/>
+<fullyQualifiedTypeName name="test.users.dao.UsersDao"/>
+<fullyQualifiedTypeName name="test.users.dto.UsersDto"/>
+<fullyQualifiedTypeName name="test.users.action.UsersSigninAction"/>
+<fullyQualifiedTypeName name="javax.websocket.Session"/>
+<fullyQualifiedTypeName name="test.users.action.UsersLogoutAction"/>
+<fullyQualifiedTypeName name="test.action.HomeAction"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="test.board.action.BoardListAction"/>
+<fullyQualifiedTypeName name="test.board.action.BoardDetailAction"/>
+<fullyQualifiedTypeName name="test.board.action.BoardUpdateformAction"/>
+<fullyQualifiedTypeName name="test.board.action.BoardUpdateAction"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+<fullyQualifiedTypeName name="test.board.action.BoardDeleteAction"/>
+<fullyQualifiedTypeName name="test.controller.Action"/>
 <fullyQualifiedTypeName name="test.board.dto.BoardDto"/>
 <fullyQualifiedTypeName name="test.board.dao.BoardDao"/>
+<fullyQualifiedTypeName name="test.controller.ActionForward"/>
+<fullyQualifiedTypeName name="test.board.action.BoardInsertAction"/>
+<fullyQualifiedTypeName name="test.board.action.BoardInsertformAction"/>
 </qualifiedTypeNameHistroy>

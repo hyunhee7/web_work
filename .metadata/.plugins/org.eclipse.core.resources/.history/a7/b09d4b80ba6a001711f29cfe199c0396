@@ -1,0 +1,20 @@
+package test.board.action;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import test.controller.Action;
+import test.controller.ActionForward;
+
+public class BoardInsertAction extends Action{
+
+	@Override
+	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) {
+		//1. 폼 전송되는 내용을 추출해서 Dto에 담은 다음
+		String writer=request.getParameter("writer");
+		String title=request.getParameter("title");
+		String content=request.getParameter("content");
+		return null;
+	}
+
+}
