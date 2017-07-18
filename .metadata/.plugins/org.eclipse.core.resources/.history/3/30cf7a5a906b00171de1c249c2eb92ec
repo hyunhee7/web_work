@@ -1,0 +1,23 @@
+package test.file.action;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import test.board.dto.BoardDto;
+import test.controller.Action;
+import test.controller.ActionForward;
+import test.file.dao.FileDao;
+import test.file.dto.FileDto;
+
+public class FileListAction extends Action{
+
+	@Override
+	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) {
+		FileDto dto=new FileDto();
+		List<FileDto> list =FileDao.getInstance().getList(dto);
+		return null;
+	}
+
+}

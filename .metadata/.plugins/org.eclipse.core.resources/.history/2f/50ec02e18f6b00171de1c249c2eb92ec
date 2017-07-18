@@ -1,0 +1,31 @@
+package test.file.dao;
+
+import java.util.List;
+
+import org.apache.ibatis.session.SqlSession;
+
+import test.board.dto.BoardDto;
+
+public class FileDao {
+	private static FileDao dao;
+	private FileDao(){}
+	//자신의 참조값을 리턴해주는 static 맴버 메소드 
+	public static FileDao getInstance(){
+		if(dao==null){
+			dao=new FileDao();
+		}
+		return dao;
+	}
+	
+	public List<BoardDto> getList(BoardDto dto){
+		//SqlSession 객체의 참조값 얻어오기 
+		SqlSession session=factory.openSession();
+		/*	Mapper.xml 문서의 namespace => board
+		 *  sql 문의 id => getList
+		 *  resultType => BoardDto
+		 */
+		List<BoardDto> list=session.selectList("board.getList", dto);
+		session.close();
+		return list;
+	}	
+}

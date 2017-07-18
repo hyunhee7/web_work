@@ -8,6 +8,14 @@
 <title>board/detail.jsp</title>
 </head>
 <body>
+<div>
+	<c:if test="${dto.prevNum ne 0 }">
+		<a href="detail.do?num=${dto.prevNum }">이전글</a>
+	</c:if>
+	<c:if test="${dto.nextNum ne 0 }">
+		<a href="detail.do?num=${dto.nextNum }">다음글</a>
+	</c:if>
+</div>
 <h3>방명록 글 자세히 보기 페이지</h3>
 <p> 글번호 : <strong>${dto.num }</strong></p>
 <p> 작성자 : <strong>${dto.writer }</strong></p>
