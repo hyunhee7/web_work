@@ -8,8 +8,8 @@
 <title>views/file/list.jsp</title>
 </head>
 <body>
+<a href="insertform.do">파일 업로드</a>
 <h3>파일 목록입니다.</h3>
-<li><a href="uploadform.do">파일업로드</a></li>
 <table>
 	<thead>
 		<tr>
@@ -38,3 +38,15 @@
 </table>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

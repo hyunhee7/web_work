@@ -1,13 +1,13 @@
 package test.file.dto;
 
 public class FileDto {
-	private	int num;				//파일번호
-	private	String writer;			//작성자	
-	private	String title;			//제목
-	private	String orgFileName;		//원본 파일명
-	private	String saveFileName;	//파일 시스템에 저장된 파일명
-	private long fileSize;			//파일의 크기
-	private String regdate;			//등록일(업로드일자)
+	private int num;                //파일번호
+	private String writer;          //작성자
+	private String title;			//제목
+	private String orgFileName;	    //원본 파일명
+	private String saveFileName;    //파일 시스템에 저장된 파일명
+	private long fileSize;          //파일의 크기
+	private String regdate;         //등록일(업로드 일자)
 	
 	//디폴트 생성자
 	public FileDto(){}
@@ -80,4 +80,12 @@ public class FileDto {
 		this.regdate = regdate;
 	}
 	
+	
 }
+
+
+
+
+
+
+

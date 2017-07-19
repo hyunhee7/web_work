@@ -1,0 +1,18 @@
+package test.users.action;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import test.controller.Action;
+import test.controller.ActionForward;
+
+public class UsersDeleteAction extends Action{
+
+	@Override
+	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) {
+		//1. 세션에 저장된 아이디 값을 읽어온다.
+		String id=(String)request.getSession().getAttribute("id");
+		return null;
+	}
+
+}

@@ -1,0 +1,28 @@
+package test.file.action;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import test.controller.Action;
+import test.controller.ActionForward;
+
+/*
+ *  파라미터로 전달되는 파일 번호에 해당하는 파일을 삭제하는 액션
+ */
+public class FileDeleteAction extends Action{
+
+	@Override
+	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) {
+		//1. 삭제할 파일의 번호 얻어오기
+		int num=Integer.parseInt(request.getParameter("num"));
+		//2. 삭제할 파일의 정보를 DB에서 읽어오기
+		
+		//3.  파일 시스템에서 파일 삭제
+		
+		//4. DB에서 파일 정보 삭제
+		
+		//목록 보기로 리다일렉트
+		return null;
+	}
+
+}

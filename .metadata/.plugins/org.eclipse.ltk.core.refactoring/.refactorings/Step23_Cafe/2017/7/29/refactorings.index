@@ -1,0 +1,12 @@
+1500433196308	Rename resource 'user'
+1500433558902	Rename resource 'MemberMapper.xml'
+1500433885891	Rename type 'UsersSignupformAction'
+1500447239803	Rename type 'SigninAction'
+1500447253295	Rename type 'SigninFormAction'
+1500447593056	Rename type 'UsersSigninAction'
+1500447600374	Rename type 'UsersSigninFormAction'
+1500447608539	Rename type 'UsersSignupAction'
+1500447615659	Rename type 'UsersSignupFormAction'
+1500448537831	Delete element
+1500448539362	Delete element
+1500451637186	Rename type 'UserUpdateformAction'

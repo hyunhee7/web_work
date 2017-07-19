@@ -14,7 +14,7 @@ public class FileListAction extends Action{
 
 	@Override
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) {
-		List<FileDto> list =FileDao.getInstance().getList();
+		List<FileDto> list=FileDao.getInstance().getList();
 		request.setAttribute("list", list);
 		return new ActionForward("/views/file/list.jsp");
 	}

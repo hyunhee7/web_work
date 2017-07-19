@@ -1,0 +1,19 @@
+package test.cafe.action;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import test.controller.Action;
+import test.controller.ActionForward;
+
+public class CafeInsertAction extends Action{
+
+	@Override
+	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) {
+		String writer=request.getParameter("writer");
+		String title=request.getParameter("title");
+		String ir1=request.getParameter("ir1");
+		return null;
+	}
+
+}
