@@ -1,0 +1,18 @@
+package test.cafe.dto;
+/*
+ *  덧글 하나의 정보를 담을 Dto
+ */
+public class CafeCommentDto {
+	private int num; //글번호
+	private String writer;
+	private String content;
+	private String target_id; //덧글의 대상이 되는 글 작성자 id
+	private int ref_group; //덧글의 그룹 번호
+	private int comment_group; //덧글 내에서의 그룹
+	private String regdate;
+	
+	//생성자
+	public CafeCommentDto(){}
+	
+	
+}

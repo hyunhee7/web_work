@@ -1,0 +1,196 @@
+@charset "UTF-8";
+	.wrapper{
+		perspective: 1000px;
+		perspective-origin: 50% 50%;
+		width: 200px;
+		margin: 0 auto;
+		height: 210px;
+		border: 3px solid black;
+	}
+	.carousel{
+		transform-style: preserve-3d;
+		position: relative;
+		width: 200px;
+		height: 210px;
+		transform: translateZ(-492px);
+		transition: all 0.6s;
+	}
+	.carousel > div{
+		position: absolute;
+		width: 200px;
+		height: 210px;
+		border: 1px solid #cecece;
+		opacity: 0.9;
+	}
+	.carousel > div:hover{
+		cursor: pointer;
+	}
+	.carousel > div:nth-child(1){
+		background-color: #afa;
+		transform: translateZ(492px);
+	}
+	.carousel > div:nth-child(2){
+		background-color: #faa;
+		transform: rotateY(22.5deg) translateZ(492px);
+	}
+	.carousel > div:nth-child(3){
+		background-color: #aaf;
+		transform: rotateY(45deg) translateZ(492px);
+	}
+	.carousel > div:nth-child(4){
+		background-color: #bfb;
+		transform: rotateY(67.5deg) translateZ(492px);
+	}
+	.carousel > div:nth-child(5){
+		background-color: #fd9;
+		transform: rotateY(90deg) translateZ(492px);
+	}
+	.carousel > div:nth-child(6){
+		background-color: #ee9;
+		transform: rotateY(112.5deg) translateZ(492px);
+	}
+	.carousel > div:nth-child(7){
+		background-color: #abf;
+		transform: rotateY(135deg) translateZ(492px);
+	}
+	.carousel > div:nth-child(8){
+		background-color: #efa;
+		transform: rotateY(157.5deg) translateZ(492px);
+	}
+	.carousel > div:nth-child(9){
+		background-color: #dfb;
+		transform: rotateY(180deg) translateZ(492px);
+	}
+	.carousel > div:nth-child(10){
+		background-color: #faa;
+		transform: rotateY(202.5deg) translateZ(492px);
+	}
+	.carousel > div:nth-child(11){
+		background-color: #fcc;
+		transform: rotateY(225deg) translateZ(492px);
+	}
+	.carousel > div:nth-child(12){
+		background-color: #cf8;
+		transform: rotateY(247.5deg) translateZ(492px);
+	}
+	.carousel > div:nth-child(13){
+		background-color: #ccf;
+		transform: rotateY(270deg) translateZ(492px);
+	}
+	.carousel > div:nth-child(14){
+		background-color: #aff;
+		transform: rotateY(292.5deg) translateZ(492px);
+	}
+	.carousel > div:nth-child(15){
+		background-color: #ffa;
+		transform: rotateY(315deg) translateZ(492px);
+	}
+	.carousel > div:nth-child(16){
+		background-color: #faf;
+		transform: rotateY(337.5deg) translateZ(492px);
+	}
+	.carousel>div{
+		font-size: 180px;
+		font-family: "Times New Roman";
+	}
+
+	.wrapper2{
+		perspective: 500px;
+		margin-top: 50px;
+	}
+	.cube{
+		transform-style: preserve-3d;
+		position: relative;
+		width: 200px;
+		height: 200px;
+		margin: 0 auto;
+
+		transform: translateZ(-100px);
+		transition: all 1.4s ease-out;
+	}
+	.cube>div{
+		position: absolute;
+		width: 200px;
+		height: 200px;
+		background-color: #fff;
+		color: #fff;
+	}
+	.cube img{
+		width: 200px;
+		height: 200px;
+	}
+	.cube > div:nth-child(1){
+		transform: translateZ(100px);
+	}
+	.cube > div:nth-child(2){
+		transform: rotateY(90deg) translateZ(100px);
+	}
+	.cube > div:nth-child(3){
+		transform: rotateY(180deg) translateZ(100px);
+	}
+	.cube > div:nth-child(4){
+		transform: rotateY(270deg) translateZ(100px);
+	}
+	.cube > div:nth-child(5){
+		transform: rotateX(90deg) translateZ(100px);
+	}
+	.cube > div:nth-child(6){
+		transform: rotateX(270deg) translateZ(100px);
+	}
+
+/*	.carousel>div{
+		-vendor-animation-iteration-count: 1;
+	}
+*/
+
+	.carousel2{
+		transform-style: preserve-3d;
+		position: relative;
+		width: 200px;
+		height: 210px;
+		transform: translateZ(-100px);
+		transition: all 1.5s;
+	}
+	.carousel2 > div{
+		position: absolute; /* 8개의 div 겹치기*/
+		width: 200px;
+		height: 210px;
+		border: 1px solid #cecece;
+		opacity: 0.8;
+		transition: all 1.5s;
+	}
+	.carousel2 > div:hover{
+		cursor: pointer;
+	}
+	.box0{
+		transform: translateZ(100px);
+		background-color: #444;
+	}
+	.box1{
+		transform: rotateY(90deg) translateZ(100px);
+		background-color: #777;
+	}
+	.box2{
+		transform: rotateY(180deg) translateZ(100px);
+		background-color: #aaa;
+	}
+	.box3{
+		transform: rotateY(270deg) translateZ(100px);
+		background-color: #ccc;
+	}
+	.box4{
+		transform: rotateX(90deg) translateZ(100px);
+		background-color: #eee;
+	}
+	.box5{
+		transform: rotateX(270deg) translateZ(100px);
+		background-color: #111;
+	}
+
+	#succeed{
+		display: none;
+		font-size: 100px;
+		font-family: fantasy;
+		text-shadow: 8px 5px 3px #cecece;
+		letter-spacing: 10px;
+	}

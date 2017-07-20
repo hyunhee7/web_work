@@ -19,7 +19,7 @@ import javax.servlet.http.HttpSession;
  * 		/users/private/하위의 모든 요청에 대해
  * 		필터링 하도록 설정
  */
-@WebFilter({"/users/private/*"})
+@WebFilter({"/users/private/*","/cafe/private/*"})
 public class LoginFilter implements Filter{
 
 	@Override
@@ -41,7 +41,7 @@ public class LoginFilter implements Filter{
 		String url=request.getRequestURI();
 		//session 에 로그인 정보가 있는지 여부를 확인해서
 		if(session.getAttribute("id")==null){
-			String path=cPath+"/users/signin_form.jsp?url="+url;
+			String path=cPath+"/users/signin_form.do?url="+url;
 			//로그인 페이지로 이동 시킨다.
 			response.sendRedirect(path);
 		}else{
